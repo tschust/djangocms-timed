@@ -1,6 +1,6 @@
 {% load i18n cms_tags %}
 
-{% if visible or visible_in_edit %}
+{% if visible or visible_in_edit and request.user.is_staff %}
     <div class="plugin-timed">
         {% if visible_in_edit %}
             <div style="border: dotted 1px black">

@@ -14,7 +14,7 @@ class Migration(migrations.Migration):
         migrations.CreateModel(
             name='TimedContentPlugin',
             fields=[
-                ('cmsplugin_ptr', models.OneToOneField(parent_link=True, related_name='djangocms_timed_timedcontentplugin', auto_created=True, primary_key=True, serialize=False, to='cms.CMSPlugin')),
+                ('cmsplugin_ptr', models.OneToOneField(parent_link=True, related_name='djangocms_timed_timedcontentplugin', auto_created=True, primary_key=True, serialize=False, to='cms.CMSPlugin', on_delete=models.CASCADE)),
                 ('timed_start', models.DateTimeField(null=True, verbose_name='Visible since', blank=True)),
                 ('timed_end', models.DateTimeField(null=True, verbose_name='Visible until', blank=True)),
             ],

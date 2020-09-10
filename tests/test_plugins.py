@@ -196,7 +196,3 @@ class TimedContentTestCase(TestCase):
             plugin.get_short_description(),
             'Always visible'
         )
-
-    def test_plugin_render(self):
-        plugin = self.get_plugin_in_page(None, None)
-        plugin.render_plugin()

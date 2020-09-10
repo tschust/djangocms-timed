@@ -3,7 +3,7 @@ django CMS Timed
 ================
 
 
-|pypi| |build| |coverage|
+|pypi|
 
 **django CMS Timed** is plugins for `django CMS <http://django-cms.org>`_
 that allow you to display plugins content within a defined period of time.
@@ -11,6 +11,13 @@ that allow you to display plugins content within a defined period of time.
 This addon is compatible with `Aldryn <http://aldryn.com>`_ and is also available on the
 `django CMS Marketplace <https://marketplace.django-cms.org/en/addons/browse/djangocms-timed/>`_
 for easy installation.
+
+
+Note
+====
+
+This is a re-release of the original plugin by Aldryn, of which the development has ceased years ago.
+
 
 
 Contributing
@@ -26,11 +33,11 @@ Documentation
 =============
 
 
-See ``REQUIREMENTS`` in the `setup.py <https://github.com/divio/djangocms-timed/blob/master/setup.py>`_
+See ``REQUIREMENTS`` in the `setup.py <https://github.com/arjan-s/djangocms-timed/blob/master/setup.py>`_
 file for additional dependencies:
 
-* Python 2.7, 3.3 or higher
-* Django 1.6 or higher
+* Python 3.5 or higher
+* Django 2.2 or 3.0
 
 
 Installation
@@ -38,7 +45,7 @@ Installation
 
 For a manual install:
 
-* run ``pip install djangocms-timed``
+* run ``pip install djangocms-timed-new``
 * add ``djangocms_timed`` to your ``INSTALLED_APPS``
 * run ``python manage.py migrate djangocms_timed``
 
@@ -55,15 +62,8 @@ Running Tests
 
 You can run tests by executing::
 
-    virtualenv env
-    source env/bin/activate
-    pip install -r tests/requirements.txt
-    python setup.py test
+    tox
 
 
-.. |pypi| image:: https://badge.fury.io/py/djangocms-timed.svg
-    :target: http://badge.fury.io/py/djangocms-timed
-.. |build| image:: https://travis-ci.org/divio/djangocms-timed.svg?branch=master
-    :target: https://travis-ci.org/divio/djangocms-timed
-.. |coverage| image:: https://codecov.io/gh/divio/djangocms-timed/branch/master/graph/badge.svg
-    :target: https://codecov.io/gh/divio/djangocms-timed
+.. |pypi| image:: https://badge.fury.io/py/djangocms-timed-new.svg
+    :target: http://badge.fury.io/py/djangocms-timed-new

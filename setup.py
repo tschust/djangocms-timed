@@ -3,7 +3,10 @@
 from setuptools import setup, find_packages
 from djangocms_timed import __version__
 
-REQUIREMENTS = []
+REQUIREMENTS = [
+    'django>=2.2,<3.1',
+    'django-cms>=3.7',
+]
 
 CLASSIFIERS = [
     'Development Status :: 4 - Beta',
@@ -19,13 +22,13 @@ CLASSIFIERS = [
 ]
 
 setup(
-    name='djangocms-timed',
+    name='djangocms-timed-new',
     version=__version__,
     description='Timed addon for django CMS',
     long_description=open('README.rst').read(),
-    author='Divio AG',
-    author_email='info@divio.ch',
-    url='https://github.com/divio/djangocms-timed',
+    author='arjan5',
+    author_email='arjan@anymore.nl',
+    url='https://github.com/arjan-s/djangocms-timed',
     packages=find_packages(),
     license='BSD License',
     platforms=['OS Independent'],

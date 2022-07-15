@@ -4,7 +4,7 @@ from setuptools import setup, find_packages
 from djangocms_timed import __version__
 
 REQUIREMENTS = [
-    'django>=2.2,<3.1',
+    'django>=2.2',
     'django-cms>=3.7',
 ]
 

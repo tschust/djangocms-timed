@@ -2,7 +2,7 @@ from __future__ import unicode_literals
 
 from django import core
 from django.db import models
-from django.utils.encoding import force_text
+from django.utils.encoding import force_str
 from django.utils.translation import ugettext_lazy as _
 from django.utils import timezone
 
@@ -78,7 +78,7 @@ class TimedContentPlugin(CMSPlugin):
     def get_short_description(self):
         instance = self.get_plugin_instance()[0]
         if instance is not None:
-            return force_text(self.get_display())
+            return force_str(self.get_display())
         return _('<Empty>')  # pragma: no cover
 
     def clean(self):
